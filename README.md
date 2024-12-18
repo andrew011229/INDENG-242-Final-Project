@@ -7,20 +7,21 @@ This repository contains the code and assets for an NBA game outcome prediction 
 ## Directory Structure
 
 ```plaintext
-├── templates/                # HTML templates for the UI
-├── Data Cleaning & EDA.ipynb # Data Cleaning and EDA notebook
-├── Modeling.ipynb            # Feature engineering, model training, and evaluation
-├── app.py                    # Flask application for user interface
-├── README.md                 # Project documentation
-├── best_lgbm.joblib          # Trained LightGBM model
-├── best_lgbm.pkl             # LightGBM backup (pickle format)
-├── final_log.zip             # Preprocessed dataset (compressed)
-├── full_gamelog.csv          # Raw team game log data
-├── full_player_gamelog.csv   # Raw player game log data
-├── full_player_stats.csv     # Raw player statistics data
-├── lstm_model.h5             # Trained LSTM model
-└── scaler.pkl                # Scaler object for feature normalization
-└── requirements.txt          # Dependency requirements
+├── templates/                        # HTML templates for the UI
+├── Data Cleaning & EDA.ipynb         # Data Cleaning and EDA notebook
+└── Data Cleaning & EDA Results.html  # Data Cleaning and EDA notebook export
+├── Modeling.ipynb                    # Feature engineering, model training, and evaluation
+├── app.py                            # Flask application for user interface
+├── README.md                         # Project documentation
+├── best_lgbm.joblib                  # Trained LightGBM model
+├── best_lgbm.pkl                     # LightGBM backup (pickle format)
+├── final_log.zip                     # Preprocessed dataset (compressed)
+├── full_gamelog.csv                  # Raw team game log data
+├── full_player_gamelog.csv           # Raw player game log data
+├── full_player_stats.csv             # Raw player statistics data
+├── lstm_model.h5                     # Trained LSTM model
+└── scaler.pkl                        # Scaler object for feature normalization
+└── requirements.txt                  # Dependency requirements
 ```
 
 ## Requirements
@@ -115,8 +116,8 @@ http://127.0.0.1:5000
 **Navigation**: Easily return to team selection or modify player choices.
 
 ## Notes
-Extract final_log.csv from final_log.zip before running any notebook or the Flask app.
+1. Extract final_log.csv from final_log.zip before running any notebook or the Flask app.
 
-Pre-trained models (best_lgbm.joblib and lstm_model.h5) and the scaler (scaler.pkl) are provided.
+2. Pre-trained models (best_lgbm.joblib and lstm_model.h5) and the scaler (scaler.pkl) are provided.
 
-Raw data is split into multiple CSV files due to GitHub size limits.
+3. Raw data is split into multiple CSV files due to GitHub size limits.
