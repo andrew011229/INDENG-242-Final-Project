@@ -9,7 +9,7 @@ This repository contains the code and assets for an NBA game outcome prediction 
 ```plaintext
 ├── templates/                        # HTML templates for the UI
 ├── Data Cleaning & EDA.ipynb         # Data Cleaning and EDA notebook
-└── Data Cleaning & EDA Results.html  # Data Cleaning and EDA notebook export
+├── Data Cleaning & EDA Results.html  # Data Cleaning and EDA notebook export
 ├── Modeling.ipynb                    # Feature engineering, model training, and evaluation
 ├── app.py                            # Flask application for user interface
 ├── README.md                         # Project documentation
@@ -20,7 +20,7 @@ This repository contains the code and assets for an NBA game outcome prediction 
 ├── full_player_gamelog.csv           # Raw player game log data
 ├── full_player_stats.csv             # Raw player statistics data
 ├── lstm_model.h5                     # Trained LSTM model
-└── scaler.pkl                        # Scaler object for feature normalization
+├── scaler.pkl                        # Scaler object for feature normalization
 └── requirements.txt                  # Dependency requirements
 ```
 
@@ -38,11 +38,11 @@ pip install -r requirements.txt
 #### File: Data Cleaning & EDA.ipynb
 #### Input:
 
-full_gamelog.csv
+a. full_gamelog.csv
 
-full_player_gamelog.csv
+b. full_player_gamelog.csv
 
-full_player_stats.csv
+c. full_player_stats.csv
 
 #### Output:
 
@@ -65,34 +65,34 @@ final_log.csv (preprocessed dataset)
 
 #### Steps:
 
-Perform feature engineering.
+a. Perform feature engineering.
 
-Train LightGBM and LSTM models.
+b. Train LightGBM and LSTM models.
 
-Combine predictions using an ensemble method.
+c. Combine predictions using an ensemble method.
 
 #### Output:
 
-best_lgbm.joblib: Trained LightGBM model
+a. best_lgbm.joblib: Trained LightGBM model
 
-lstm_model.h5: Trained LSTM model
+b. lstm_model.h5: Trained LSTM model
 
-scaler.pkl: Scaler for feature normalization
+c. scaler.pkl: Scaler for feature normalization
 
 ### 3. Run the Flask Application
 #### Required Files:
 
-app.py
+a. app.py
 
-best_lgbm.joblib
+b. best_lgbm.joblib
 
-lstm_model.h5
+c. lstm_model.h5
 
-scaler.pkl
+d. scaler.pkl
 
-final_log.csv (extracted from final_log.zip)
+e. final_log.csv (extracted from final_log.zip)
 
-templates/ (HTML files)
+f. templates/ (HTML files)
 
 #### Instructions:
 
